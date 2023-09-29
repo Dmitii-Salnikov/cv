@@ -1,84 +1,165 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Моё портфолио</title>
-    <meta name="keywords" content="resume, cv, Dmitrii Salnikov"> 
+    <meta name="keywords" content="resume, cv, Dmitrii Salnikov">
     <meta name="description" content="Это сайт - резюме Дмитрия Сальникова">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <img src="img/1.jpg" alt="Фото Дмитрия Сальникова" width="500px">
-    <h1>Дмитрий Сальников</h1>
-    <p><em>Я начинающий <strong>Web-разработчик</strong></em></p>
-    <p>Я люблю музыку, путешествия и, конечно, програмировать</p>
+    <main>
 
-    <hr>
+        <section class="about">
+            <div class="container">
+                <div class="card about__card">
+                    <div class="about__content">
+                        <img class="about__avatar" src="img/1.jpg" alt="Здесь моё фото">
+                        <div class="about__text">
+                            <h1 class="about__title">Дмитрий Сальников</h1>
+                            <ul class="about__list list-reset">
+                                <li class="about__item">29 лет</li>
+                                <li class="about__item">Начинающий Web-разработчик</li>
+                                <li class="about__item">Люблю музыку, путешествия и, конечно, програмировать</li>
+                            </ul>
+                            <h3 class="social__title">Мои социальные сети:</h3>
+                            <ul class="social__list list-reset">
+                                <li class="social__item">
+                                    <a class="social__link" href="https://vk.com/dmitrii_salnikov" target="_blank">
+                                        <svg class="social__img" fill="#393939" version="1.1" id="Capa_1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px"
+                                            viewBox="-0.98 -0.98 99.71 99.71" xml:space="preserve" stroke="#393939"
+                                            stroke-width="0.0009775">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                stroke-linejoin="round"></g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <g>
+                                                    <path
+                                                        d="M48.875,0C21.883,0,0,21.882,0,48.875S21.883,97.75,48.875,97.75S97.75,75.868,97.75,48.875S75.867,0,48.875,0z M73.667,54.161c2.278,2.225,4.688,4.319,6.733,6.774c0.906,1.086,1.76,2.209,2.41,3.472c0.928,1.801,0.09,3.776-1.522,3.883 l-10.013-0.002c-2.586,0.214-4.644-0.829-6.379-2.597c-1.385-1.409-2.67-2.914-4.004-4.371c-0.545-0.598-1.119-1.161-1.803-1.604 c-1.365-0.888-2.551-0.616-3.333,0.81c-0.797,1.451-0.979,3.059-1.055,4.674c-0.109,2.361-0.821,2.978-3.19,3.089 c-5.062,0.237-9.865-0.531-14.329-3.083c-3.938-2.251-6.986-5.428-9.642-9.025c-5.172-7.012-9.133-14.708-12.692-22.625 c-0.801-1.783-0.215-2.737,1.752-2.774c3.268-0.063,6.536-0.055,9.804-0.003c1.33,0.021,2.21,0.782,2.721,2.037 c1.766,4.345,3.931,8.479,6.644,12.313c0.723,1.021,1.461,2.039,2.512,2.76c1.16,0.796,2.044,0.533,2.591-0.762 c0.35-0.823,0.501-1.703,0.577-2.585c0.26-3.021,0.291-6.041-0.159-9.05c-0.28-1.883-1.339-3.099-3.216-3.455 c-0.956-0.181-0.816-0.535-0.351-1.081c0.807-0.944,1.563-1.528,3.074-1.528l11.313-0.002c1.783,0.35,2.183,1.15,2.425,2.946 l0.01,12.572c-0.021,0.695,0.349,2.755,1.597,3.21c1,0.33,1.66-0.472,2.258-1.105c2.713-2.879,4.646-6.277,6.377-9.794 c0.764-1.551,1.423-3.156,2.063-4.764c0.476-1.189,1.216-1.774,2.558-1.754l10.894,0.013c0.321,0,0.647,0.003,0.965,0.058 c1.836,0.314,2.339,1.104,1.771,2.895c-0.894,2.814-2.631,5.158-4.329,7.508c-1.82,2.516-3.761,4.944-5.563,7.471 C71.48,50.992,71.611,52.155,73.667,54.161z">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="https://t.me/Salnikov_Dmitrii" target="_blank">
+                                        <svg class="social__img social__img--tg" fill="#393939"
+                                            viewBox="-0.32 -0.32 32.64 32.64" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
+                                            stroke="#393939">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                stroke-linejoin="round"></g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <title>telegram</title>
+                                                <path
+                                                    d="M22.122 10.040c0.006-0 0.014-0 0.022-0 0.209 0 0.403 0.065 0.562 0.177l-0.003-0.002c0.116 0.101 0.194 0.243 0.213 0.403l0 0.003c0.020 0.122 0.031 0.262 0.031 0.405 0 0.065-0.002 0.129-0.007 0.193l0-0.009c-0.225 2.369-1.201 8.114-1.697 10.766-0.21 1.123-0.623 1.499-1.023 1.535-0.869 0.081-1.529-0.574-2.371-1.126-1.318-0.865-2.063-1.403-3.342-2.246-1.479-0.973-0.52-1.51 0.322-2.384 0.221-0.23 4.052-3.715 4.127-4.031 0.004-0.019 0.006-0.040 0.006-0.062 0-0.078-0.029-0.149-0.076-0.203l0 0c-0.052-0.034-0.117-0.053-0.185-0.053-0.045 0-0.088 0.009-0.128 0.024l0.002-0.001q-0.198 0.045-6.316 4.174c-0.445 0.351-1.007 0.573-1.619 0.599l-0.006 0c-0.867-0.105-1.654-0.298-2.401-0.573l0.074 0.024c-0.938-0.306-1.683-0.467-1.619-0.985q0.051-0.404 1.114-0.827 6.548-2.853 8.733-3.761c1.607-0.853 3.47-1.555 5.429-2.010l0.157-0.031zM15.93 1.025c-8.302 0.020-15.025 6.755-15.025 15.060 0 8.317 6.742 15.060 15.060 15.060s15.060-6.742 15.060-15.060c0-8.305-6.723-15.040-15.023-15.060h-0.002q-0.035-0-0.070 0z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <h2>Мои социальные сети</h2>
-    <ul>
-        <li><a href="https://vk.com/dmitrii_salnikov" target="_blank">Вконтакте</a></li>
-        <li><a href="https://t.me/Salnikov_Dmitrii" target="_blank">Телеграм</a></li>
-    </ul>
+        <section class="hobbies">
+            <div class="container">
+                <div class="hobbies__card card">
+                    <h2 class="hobbies__title section__title">Мои хобби</h2>
+                    <ol class="hobbies__list">
+                        <li class="hobbies__item">Музыка</li>
+                        <li class="hobbies__item">Бег</li>
+                        <li class="hobbies__item">Путешествия</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
 
-    <hr>
+        <section class="experience">
+            <div class="container">
+                <div class="experience__card card">
+                    <h2 class="experience__title section__title">Опыт работы</h2>
+                    <table class="experience__table">
+                        <thead>
+                            <tr>
+                                <th class="experience__table-title">Место учёбы</th>
+                                <th class="experience__table-title">Год</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="experience__table-row">
+                                <td><a class="experience__link" href="https://disk.yandex.ru/i/ASoXXcMrsskDsA"
+                                        target="_black">Курсы
+                                        Skillbox (Базовый HTML и
+                                        CSS)</a></td>
+                                <td>2022 - 2023</td>
+                            </tr>
+                            <tr class="experience__table-row">
+                                <td><a class="experience__link" href="https://disk.yandex.ru/i/y_tfC5Y7lubjhg"
+                                        target="_black">Курс по
+                                        базовому JS Дмитрия
+                                        Фокеева</a></td>
+                                <td>2023</td>
+                            </tr>
+                            <tr class="experience__table-row">
+                                <td><a class="experience__link" href="#" target="_black">Профессия Джуниор<br>
+                                        Frontend-разработчик (Result Shcool)
+                                    </a></td>
+                                <td>2023</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
 
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Музыка</li> 
-        <li>Преподавание</li>
-        <li>Путешествия</li>
-    </ol>
+        <section class="projects">
+            <div class="container">
+                <div class="projects__card card">
+                    <h2 class="section__title">Мои проекты</h2>
+                    <a class="projects__link" href="projects.html" target="_blank">Посмотреть</a>
+                </div>
+            </div>
+        </section>
 
-    <hr>
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__card card">
+                    <h2 class="contacts__title section__title">Связаться со мной</h2>
+                    <form class="contacts__form" action="/">
+                        <label class="contacts__label" for="name">Ваше имя:</label>
+                        <input class="contacts__input" type="text" name="" id="name" placeholder="Введите Ваше имя...">
+                        <label class="contacts__label" for="mail">Ваш email:</label>
+                        <input class="contacts__input" type="email" name="" id="mail"
+                            placeholder="Введите Ваш Email...">
+                        <textarea class="contacts__textarea" name="" id="textarea"
+                            placeholder="Напишите мне"></textarea>
+                        <input class="contacts__btn" type="submit" value="Связаться!">
+                    </form>
+                </div>
+            </div>
+        </section>
 
-    <h2>Опыт работы</h2>
+    </main>
 
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Место работы</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-       <tbody>
-        <tr>
-            <td>Музыкальная школа №7</td>
-            <td>Концертмейстер</td>
-            <td>2013 - 2023</td>
-        </tr>
-        <tr>
-            <td>Курсы Skillbox</td>
-            <td>Студент</td>
-            <td>2021 - 2023</td>
-        </tr>
-        <tr>
-            <td>Курс по JS Дмитрия Фокеева</td>
-            <td>Студент</td>
-            <td>2023</td>
-        </tr>
-       </tbody>
-    </table>
+    <footer class="footer">
+        <div class="container">
 
-    <hr>
+        </div>
+    </footer>
 
-    <h2>Мои проекты</h2>
-    <a href="projects.html" target="_blank">Посмотреть</a>
-
-    <hr>
-
-    <h2>Связаться со мной</h2>
-
-    <form action="/">
-        <label for="name">Ваше имя:</label>
-        <input type="text" name="" id="name" placeholder="Введите Ваше имя">
-        <label for="mail">Ваш Email:</label>
-        <input type="email" name="" id="mail" placeholder="Введите Ваш Email">
-        <textarea name="" id="text"></textarea>
-        <input type="submit" value="Связаться!">
-    </form>
-    
 </body>
+
 </html>
