@@ -91,7 +91,7 @@ a {
 }
 
 .card__icon--about {
-    background-image: url('../img/work.svg');
+    background-image: url('/img/work.svg');
 }
 
 .about__content {
@@ -154,7 +154,7 @@ a {
 }
 
 .card__icon--hobbies {
-    background-image: url('../img/hobbies.svg');
+    background-image: url('/img/hobbies.svg');
 }
 
 .hobbies__list {
@@ -188,7 +188,7 @@ a {
 }
 
 .card__icon--experience {
-    background-image: url('../img/experience.svg');
+    background-image: url('/img/experience.svg');
 }
 
 .experience__table {
@@ -221,7 +221,7 @@ a {
 }
 
 .card__icon--projects {
-    background-image: url('../img/projects.svg');
+    background-image: url('/img/projects.svg');
 }
 
 .projects__link {
@@ -243,7 +243,7 @@ a {
 }
 
 .card__icon--contacts {
-    background-image: url('../img/phone.svg');
+    background-image: url('/img/phone.svg');
 }
 
 .contacts__content {
