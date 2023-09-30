@@ -69,11 +69,11 @@ a {
     position: absolute;
     top: 15px;
     right: 20px;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 25px 25px;
+    background-size: 30px 30px;
 }
 
 .section__title {
@@ -91,7 +91,7 @@ a {
 }
 
 .card__icon--about {
-    background-image: url(/img/work.png);
+    background-image: url(/img/work.svg);
 }
 
 .about__content {
@@ -154,7 +154,7 @@ a {
 }
 
 .card__icon--hobbies {
-    background-image: url(/img/hobbies.png);
+    background-image: url(/img/hobbies.svg);
 }
 
 .hobbies__list {
@@ -188,7 +188,7 @@ a {
 }
 
 .card__icon--experience {
-    background-image: url(/img/experience.png);
+    background-image: url(/img/experience.svg);
 }
 
 .experience__table {
@@ -221,7 +221,7 @@ a {
 }
 
 .card__icon--projects {
-    background-image: url(/img/projects.png);
+    background-image: url(/img/projects.svg);
 }
 
 .projects__link {
@@ -243,7 +243,7 @@ a {
 }
 
 .card__icon--contacts {
-    background-image: url(/img/phone.png);
+    background-image: url(/img/phone.svg);
 }
 
 .contacts__content {
