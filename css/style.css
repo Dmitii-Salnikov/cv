@@ -15,7 +15,7 @@
     --color-blue: #458EA3;
     --color-light-gray: rgb(234, 237, 255);
     --color-light-orange: #FBE7D5;
-
+    --color-brown: #A38545;
 }
 
 *,
@@ -145,6 +145,14 @@ a {
     gap: 20px;
 }
 
+.social__img {
+    transition: transform .3s ease-in-out;
+}
+
+.social__img:hover {
+    transform: scale(1.2);
+}
+
 .social__img--stroke {
     transition: stroke .3s ease-in-out;
 }
@@ -203,47 +211,90 @@ a {
     background-image: url('/img/experience.svg');
 }
 
-.experience__table {
-    border-spacing: 30px 15px;
+.experience__table-head-row {
+    background-color: #E0A6F7;
 }
 
-.experience__table-title {
+.experience__table-main-row {
+    background-color: #E8BEF9;
+    transition: background-color .3s ease-in-out, color;
+}
+
+.experience__table-main-row:hover {
+    background-color: var(--color-violet);
+    color: var(--color-light-gray);
+}
+
+.experience__table-head,
+.experience__table-row {
     text-align: start;
+    padding: 10px;
+    padding-right: 40px;
+    position: relative;
     font-weight: 400;
     font-style: italic;
-    padding-bottom: 5px;
+    transition: color .3s ease-in-out;
 }
 
-.experience__table-row {
-    padding-bottom: 10px;
+.experience__table-head {
+    font-weight: 600;
+}
+
+.experience__table-head--left {
+    border-top-left-radius: 25px;
+}
+
+.experience__table-head--right {
+    border-top-right-radius: 25px;
+}
+
+.experience__table-row--left {
+    border-bottom-left-radius: 25px;
+}
+
+.experience__table-row--right {
+    border-bottom-right-radius: 25px;
 }
 
 .experience__link {
     position: relative;
-    font-weight: 600;
-    font-style: italic;
-    transition: color .3s ease-in-out;
-    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .experience__link::before {
-    position: absolute;
     content: '';
-    bottom: -5px;
-    left: 3px;
-    right: 3px;
-    height: 2px;
-    background-color: var(--color-violet);
+    position: absolute;
+    bottom: -3px;
+    left: 1px;
+    right: 30px;
+    height: 1px;
+    background-color: var(--color-light-gray);
     transform: scale(0);
     transition: transform .3s ease-in-out;
 }
 
-.experience__link:hover {
-    color: var(--color-violet);
+.experience__link--icon {
+    width: 20px;
+    height: 20px;
+    transition: transform .3s ease-in-out;
+}
+
+.experience__link--icon path {
+    transition: stroke .3s ease-in-out;
 }
 
 .experience__link:hover.experience__link::before {
     transform: scale(1);
+}
+
+.experience__link:hover .experience__link--icon {
+    transform: scale(1.3);
+}
+
+.experience__table-main-row:hover .experience__link--icon path {
+    stroke: var(--color-light-gray);
 }
 
 .projects__card {
@@ -258,23 +309,43 @@ a {
 }
 
 .projects__title {
+    position: relative;
     margin-bottom: 0;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom .3 ease-in-out;
+    transition: color .3s ease-in-out;
 }
 
 .projects__link:hover .projects__title {
-    border-bottom: 2px double var(--color-dark-gray);
+    color: var(--color-brown);
+}
+
+.projects__title::before {
+    position: absolute;
+    content: '';
+    bottom: -5px;
+    left: 7px;
+    right: 7px;
+    height: 1px;
+    background-color: var(--color-brown);
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform .3s ease-in-out, opacity .2s ease-in-out;
+}
+
+.projects__link:hover .projects__title::before {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .projects__arrow {
-    width: 60px;
-    height: 60px;
-    transition: transform .3s ease-in-out;
+    width: 40px;
+    height: 40px;
+    transform: translateX(30px);
+    transition: transform .3s ease-in-out, fill .3s ease-in-out;
 }
 
 .projects__link:hover .projects__arrow {
-    transform: translateX(30px);
+    transform: translateX(0);
+    fill: var(--color-brown);
 }
 
 .card__icon--projects {
@@ -296,35 +367,27 @@ a {
 }
 
 .contacts__form {
-    width: 65%;
+    width: 75%;
     display: flex;
     flex-direction: column;
+    gap: 20px;
+}
+
+.contact__form-up {
+    display: flex;
     gap: 10px;
 }
 
-.contacts__icon {
-    align-self: flex-start;
-    width: 35%;
-}
-
-.contacts__svg .cls-1,
-.contacts__svg .cls-2 {
-    transition: stroke .3s ease-in-out;
-}
-
-.contacts__svg:hover .cls-1,
-.contacts__svg:hover .cls-2 {
-    stroke: var(--color-blue);
-}
-
-.contacts__label {
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 1px;
+.contacts__form-down {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    align-items: center;
 }
 
 .contacts__input {
-    max-width: 400px;
+    width: 50%;
     padding: 10px;
     font-size: 16px;
     color: var(--color-dark-gray);
@@ -355,7 +418,8 @@ a {
 }
 
 .contacts__textarea {
-    max-width: 400px;
+    align-self: flex-end;
+    width: 75%;
     height: 100px;
     padding: 10px;
     padding-top: 15px;
@@ -375,20 +439,42 @@ a {
 }
 
 .contacts__btn {
-    padding: 10px;
+    position: relative;
+    align-self: center;
+    width: 70px;
+    height: 70px;
     color: var(--color-dark-gray);
-    align-self: flex-start;
     border: none;
-    border-radius: 25px;
-    background-color: var(--color-light-gray);
-    font-weight: normal;
-    font-size: 12px;
-    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+    background-color: transparent;
     cursor: pointer;
 }
 
-.contacts__btn:hover {
-    color: var(--color-light-gray);
-    background-color: var(--color-blue);
+.contacts__btn--arrow {
+    position: absolute;
+    top: 18px;
+    right: -15px;
+    width: 40px;
+    height: 40px;
+    transition: transform .3s ease-in-out, stroke .3s ease-in-out;
+}
 
+.contacts__btn--arrow path {
+    transition: stroke .3s ease-in-out;
+}
+
+.contacts__btn:hover .contacts__btn--arrow {
+    transform: translateX(22px) scaleX(1.4);
+}
+
+.contacts__btn:hover .contacts__btn--arrow path {
+    stroke: var(--color-dark-gray);
+}
+
+.contacts__btn--mail path {
+    transition: stroke-width .3s ease-in-out;
+}
+
+.contacts__btn:hover .contacts__btn--mail path {
+    stroke-width: 0.8;
+    stroke: var(--color-dark-gray);
 }
