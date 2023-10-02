@@ -1,7 +1,55 @@
 @font-face {
-
     font-family: 'Roboto';
-    src: url(http://fonts.gstatic.com/s/roboto/v15/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2);
+    src: local('Roboto Bold Italic'),
+        url('../fonts/Roboto-BoldItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Bold'),
+        url('../fonts/Roboto-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Regular'),
+        url('../fonts/Roboto-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Italic'),
+        url('../fonts/Roboto-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Light'),
+        url('../fonts/Roboto-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Light Italic'),
+        url('../fonts/Roboto-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
 }
 
 :root {
@@ -79,7 +127,7 @@ a {
 
 .section__title {
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 20px;
 }
 
@@ -116,7 +164,7 @@ a {
 
 .about__title {
     font-size: 32px;
-    font-weight: normal;
+    font-weight: 400;
     color: var(--color-dark-gray);
 }
 
@@ -124,7 +172,7 @@ a {
     list-style-type: none;
     font-size: 16px;
     line-height: 16px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.9px;
     color: var(--color-dark-gray);
 }
@@ -134,9 +182,9 @@ a {
 }
 
 .social__title {
-    font-size: 14px;
+    font-size: 16px;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
@@ -188,7 +236,7 @@ a {
     padding: 0;
     gap: 10px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     font-style: italic;
     cursor: default;
 }
@@ -231,7 +279,7 @@ a {
 }
 
 .experience__table-head {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .experience__table-head--left {
@@ -411,7 +459,7 @@ a {
     font-style: italic;
     color: var(--color-blue);
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 300;
     transition: color .3s ease-in-out, letter-spacing .3s ease-in-out;
 }
 
@@ -432,8 +480,8 @@ a {
     border: 1px solid var(--color-blue);
     resize: none;
     outline: none;
-    font-weight: 400;
-    font-size: 12px;
+    font-size: 16px;
+    color: var(--color-dark-gray);
     transition: border .3s ease-in-out, background-color .3s ease-in-out;
 }
 
