@@ -92,7 +92,7 @@ a {
 }
 
 .card__icon--about {
-    background-image: url('/img/info.svg');
+    background-image: url('../img/info.svg');
 }
 
 .about__content {
@@ -174,7 +174,7 @@ a {
 }
 
 .card__icon--hobbies {
-    background-image: url('/img/hobbies.svg');
+    background-image: url('../img/hobbies.svg');
 }
 
 .hobbies__list {
@@ -208,7 +208,7 @@ a {
 }
 
 .card__icon--experience {
-    background-image: url('/img/experience.svg');
+    background-image: url('../img/experience.svg');
 }
 
 .experience__table-head-row {
@@ -217,12 +217,6 @@ a {
 
 .experience__table-main-row {
     background-color: #E8BEF9;
-    transition: background-color .3s ease-in-out, color;
-}
-
-.experience__table-main-row:hover {
-    background-color: var(--color-violet);
-    color: var(--color-light-gray);
 }
 
 .experience__table-head,
@@ -256,11 +250,16 @@ a {
     border-bottom-right-radius: 25px;
 }
 
+.experience__table-row--document {
+    cursor: pointer;
+}
+
 .experience__link {
     position: relative;
     display: flex;
     align-items: center;
     gap: 10px;
+    transition: color .3s ease-in-out;
 }
 
 .experience__link::before {
@@ -270,7 +269,7 @@ a {
     left: 1px;
     right: 30px;
     height: 1px;
-    background-color: var(--color-light-gray);
+    background-color: var(--color-violet);
     transform: scale(0);
     transition: transform .3s ease-in-out;
 }
@@ -285,17 +284,22 @@ a {
     transition: stroke .3s ease-in-out;
 }
 
-.experience__link:hover.experience__link::before {
+.experience__table-row--document:hover .experience__link {
+    color: var(--color-violet);
+}
+
+.experience__table-row--document:hover .experience__link::before {
     transform: scale(1);
 }
 
-.experience__link:hover .experience__link--icon {
+.experience__table-row--document:hover .experience__link--icon {
     transform: scale(1.3);
 }
 
-.experience__table-main-row:hover .experience__link--icon path {
-    stroke: var(--color-light-gray);
+.experience__table-row--document:hover .experience__link--icon path {
+    stroke: var(--color-violet);
 }
+
 
 .projects__card {
     background-color: var(--color-light-orange);
@@ -349,7 +353,7 @@ a {
 }
 
 .card__icon--projects {
-    background-image: url('/img/projects.svg');
+    background-image: url('../img/projects.svg');
 }
 
 .contacts__card {
@@ -357,7 +361,7 @@ a {
 }
 
 .card__icon--contacts {
-    background-image: url('/img/phone.svg');
+    background-image: url('../img/phone.svg');
 }
 
 .contacts__content {
